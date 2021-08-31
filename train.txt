@@ -1,0 +1,4 @@
+python train.py --train-images-folder F:\coco-2017\train2017 --prepared-train-labels prepared_train_annotation.pkl --val-labels F:\coco-2017\annotations\person_keypoints_val2017.json --val-images-folder F:\coco-2017\val2017 --checkpoint-path mobilenet_sgd_68.848.pth.tar --from-mobilenet
+
+
+python val.py --labels F:\coco-2017\annotations\person_keypoints_val2017.json --images-folder F:\coco-2017\val2017 --checkpoint-path checkpoint_iter_370000.pth
