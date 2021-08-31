@@ -1,4 +1,4 @@
-# FPS AI Helper
+# FPS AI AIM Helper
 
 Machine Learning AI Powered Aim Helper (Tested: CSGO, Rainbow six)
 
