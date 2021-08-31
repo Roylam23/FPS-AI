@@ -132,11 +132,11 @@ def run_demo(net, image_provider, height_size, cpu, track, smooth):
         for pose in current_poses:
             cv2.rectangle(img, (pose.bbox[0], pose.bbox[1]),
                           (pose.bbox[0] + pose.bbox[2], pose.bbox[1] + pose.bbox[3]), (245, 197, 66))
-            if track:
-                cv2.putText(img, 'Target: {}'.format(pose.id), (pose.bbox[0], pose.bbox[1] - 16),
-                            cv2.FONT_HERSHEY_COMPLEX, 0.5, (234,182,118))
+            # if track:
+            #     cv2.putText(img, 'Target: {}'.format(pose.id), (pose.bbox[0], pose.bbox[1] - 16),
+            #                 cv2.FONT_HERSHEY_COMPLEX, 0.5, (234,182,118))
         # cv2.resizeWindow("TEST AI", 1200, 880);
-        img = cv2.resize(img,(int(width*2),int(height*2)),interpolation=cv2.INTER_CUBIC)
+        # img = cv2.resize(img,(int(width*2),int(height*2)),interpolation=cv2.INTER_CUBIC)
         cv2.imshow('FPS AI', img)
         key = cv2.waitKey(delay)
         if key == 27:  # esc
